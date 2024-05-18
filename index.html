@@ -4,27 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Count Down</title>
-
-    <link rel="stylesheet" href="event.css">
+    <title>text Editor</title>
+    <!-- link for css  -->
+    <link rel="stylesheet" href="text.css">
 </head>
 
 <body>
-    <div class="parent_box">
+    <div class="parent">
+        <h1>TEXTEDITOR</h1>
 
-        <p>Count Down</p>
+        <input type="text" id="editor">
+        <br>
 
-        <div class="event-Date-box">
-            <button type="button" onclick="eventfunction()">Select Event Date</button>
-            <input type="date" id="eventdate">
+        <div class="btn">
+            <button type="button" onclick="bold()">Bold</button>
+            <button type="button" onclick="italic()">Italic</button>
+            <button type="button" onclick="underline()">Underline</button>
+            <!-- <input type="text" onclick="fontsize()" id="font_size" placeholder="font size"> -->
+            <button type="button" onclick="location.reload()">Clear All</button>
+
         </div>
-
-        <div id="remaining_days"> Remaining Days</div>
 
     </div>
 
-    <script src="event.js"></script>
-
+    <script src="text.js"></script>
 </body>
 
 </html>
